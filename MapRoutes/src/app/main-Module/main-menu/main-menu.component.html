@@ -1,0 +1,31 @@
+<div class="menu" [ngStyle]="{ 'width' : IsMenuActive ? '200px' : '100px' }">
+
+    <button type="menu" class="menuButton" (click)= "IsMenuActive = !IsMenuActive"
+        [ngStyle]="!IsMenuActive ? { 'color': 'transparent', 'background-position' : 'center'} : {}">
+    </button>
+
+    <h3 >MapRoutes</h3>
+
+    <img class="logo" src="./../../../assets/Logo.png">
+
+    <p class="separator"></p>
+
+    <h4 type="additional">Menu</h4>
+
+    <button type="menu" class="createRouteButton"
+        [ngStyle]="!IsMenuActive ? { 'color': 'transparent', 'background-position' : 'center'} : {}"
+        [ngClass]="!IsMenuActive ? 'hideText' : 'showText'">Show recorded route</button>
+
+    <button type="menu" class="recordRouteButton" style="margin-bottom: 10px;"
+            [ngStyle]="!IsMenuActive ? { 'color': 'transparent', 'background-position' : 'center'} : {}"
+            [ngClass]="!IsMenuActive ? 'hideText' : 'showText'">Record new route</button>     
+
+    <p class="separator"></p>
+
+    <h4 type="additional">Preferences</h4>
+        
+    <button type="menu" class="settingsButton"
+        [ngStyle]="!IsMenuActive ? { 'color': 'transparent', 'background-position' : 'center'} : {}"
+        [ngClass]="!IsMenuActive ? 'hideText' : 'showText'">Show recorded route</button>
+
+</div>
